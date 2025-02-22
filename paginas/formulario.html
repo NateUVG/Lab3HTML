@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Informe a Aegis</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Informe - Aegis</h1>
+    </header>
+    <article>
+        <form action="berlin.html" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="informe">Informe de la misión:</label>
+            <textarea id="informe" name="informe" required></textarea><br>
+
+            <label for="prioridad">Nivel de prioridad:</label>
+            <select id="prioridad" name="prioridad">
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select><br>
+
+            <fieldset>
+                <legend>Confirmar autenticidad:</legend>
+                <input type="radio" id="si" name="autenticidad" value="si" required>
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="autenticidad" value="no">
+                <label for="no">No</label>
+            </fieldset><br>
+
+            <input type="checkbox" id="urgente" name="urgente">
+            <label for="urgente">Informe urgente</label><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </article>
+    <footer>
+        <a href="berlin.html">Continuar a Berlin</a>
+    </footer>
+</body>
+</html>
